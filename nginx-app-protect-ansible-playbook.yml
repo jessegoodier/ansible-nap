@@ -64,8 +64,8 @@
 
     # The location of the certificate and key to be used when downloading the packages onto the host
     nginx_license:
-      certificate: "{{playbook_dir}}/nginx-repo.crt"
-      key: "{{playbook_dir}}/nginx-repo.key"
+      certificate: "{{playbook_dir}}/license/nginx-repo.crt"
+      key: "{{playbook_dir}}/license/nginx-repo.key"
 
   roles:
     - role: nginxinc.nginx_app_protect
