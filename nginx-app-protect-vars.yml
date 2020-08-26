@@ -1,7 +1,4 @@
----
-- hosts: wafs
-  become: true
-  vars:
+
     # Specify whether you want to maintain your version of NGINX App Protect, upgrade to the latest version, or remove NGINX App Protect.
     # Can be used with `app_protect_version` to achieve fine grained control on which version of NGINX App Protect is installed/used on each playbook execution.
     # Using 'present' will install the latest version (or 'app_protect_version') of NGINX App Protect on a fresh install.
@@ -66,6 +63,3 @@
     nginx_license:
       certificate: "{{playbook_dir}}/license/nginx-repo.crt"
       key: "{{playbook_dir}}/license/nginx-repo.key"
-
-  roles:
-    - role: nginxinc.nginx_app_protect

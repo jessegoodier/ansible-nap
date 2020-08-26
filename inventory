@@ -1,2 +1,2 @@
 [wafs]
-10.0.1.66
+10.0.1.66 ansible_user=ubuntu
